@@ -1,5 +1,6 @@
 import { useCountryQuery } from '~/api/hooks'
 import LoaderOverlay from '../LoaderOverlay'
+import { DetailRow } from './DetailRow'
 
 const CountryDetails = ({ code }: { code: string }) => {
   const { data, isPending, isError } = useCountryQuery(code)
@@ -40,27 +41,17 @@ const CountryDetails = ({ code }: { code: string }) => {
         <h2 className="text-xl font-semibold mb-4">Country Information</h2>
 
         <div className="space-y-2 text-sm">
-          <p>
-            <span className="text-gray-500">Capital: </span>
-            <span className="font-medium">{capital}</span>
-          </p>
-
-          <p>
-            <span className="text-gray-500">Currency: </span>
-            <span className="font-medium">
-              {currencyName} {currencySymbol && `(${currencySymbol})`}
-            </span>
-          </p>
-
-          <p>
-            <span className="text-gray-500">Population: </span>
-            <span className="font-medium">{population}</span>
-          </p>
-
-          <p>
-            <span className="text-gray-500">Area: </span>
-            <span className="font-medium">{area} km²</span>
-          </p>
+          <DetailRow label="Capital" value={capital} />
+          <DetailRow
+            label="Currency"
+            value={
+              <>
+                {currencyName} {currencySymbol && `(${currencySymbol})`}
+              </>
+            }
+          />
+          <DetailRow label="Population" value={population} />
+          <DetailRow label="Area" value={`${area} km²`} />
         </div>
       </div>
 
