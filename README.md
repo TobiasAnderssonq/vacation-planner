@@ -9,6 +9,7 @@
 - I only added a prettier config for code formatting, to make it scalable I would also include linting rules.
 - Depending on what context the app would be used, consider more about WCAG principles and responsiveness.
 - Add deployments together with CI/CD pipelines
+- In a proper setting I would also have divided the work into separate commits rather than pushing it all as an "initial commit".
 
 ### Installation
 
