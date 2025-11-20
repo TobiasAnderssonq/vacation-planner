@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint", // Eslint - Linter
+    "esbenp.prettier-vscode", // Prettier - Formatter
+    "mgmcdermott.vscode-language-babel" // Babel Javascript - Syntax highlighting
+  ]
+}
