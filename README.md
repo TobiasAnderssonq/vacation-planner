@@ -2,14 +2,16 @@
 
 ## Improvements
 
-- Due to the time restrait no testing was taken into consideration
+- Due to the time restrait no testing was taken into consideration.
 - If I would take this project further I would put more effort into deciding which styling and theme to follow.
   Now I just went with default tailwind to get things running.
-- Put more effort into better looking error states
+- Put more effort into better looking error states.
 - I only added a prettier config for code formatting, to make it scalable I would also include linting rules.
 - Depending on what context the app would be used, consider more about WCAG principles and responsiveness.
-- Add deployments together with CI/CD pipelines
+- Add deployments together with CI/CD pipelines.
 - In a proper setting I would also have divided the work into separate commits rather than pushing it all as an "initial commit".
+- Add sorting for countries.
+- Improve UX for filtering to make it scale better, for example by hiding the filters under a filter icon which opens a modal for more advanced filter options.
 
 ### Installation
 
